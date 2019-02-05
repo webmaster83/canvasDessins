@@ -14,23 +14,56 @@ var c = document.getElementById("monCanvas");
 var ctx = c.getContext("2d");
 ctx.beginPath();
 //ctx.strokeStyle ="red"; /*  contour*/
-ctx.moveTo(50, 50);
+/*ctx.moveTo(50, 50);
 ctx.lineTo(50, 150);
 ctx.lineTo(100, 100);
 	ctx.fillStyle = "red";
 	ctx.fill(); /* remplir*/
-ctx.closePath();
+/*ctx.closePath();
 
 	
 	
 	    /*ligne droite vertical*/
-ctx.beginPath();
+/*ctx.beginPath();
 ctx.strokeStyle ="black";
 ctx.moveTo(51, 145);
 ctx.lineTo(51, 200);
 ctx.stroke();
 ctx.closePath();
+*/
 
+/*ctx.beginPath(); // Début du chemin*/
+ctx.fillStyle="red";
+ctx.fillRect( 10,10, 400,250);
+
+	/*bar du drapeau*/
+ctx.beginPath();
+ctx.strokeStyle ='#000';
+ctx.moveTo (10,10);
+ctx.lineTo ( 10, 400);
+ctx.stroke();
+
+	/*etoile*/
+ctx.beginPath();
+ctx.moveTo(200,50); // Puis on saute jusqu'à 200,50
+ctx.lineTo(150,200); // Puis on trace jusqu'à 50,200
+ctx.fillStyle ="green";
+ctx.fill();// pour tracé les 2 lignes
+
+ctx.moveTo(200,50);  // Le tracé part du point 50,50
+ctx.lineTo(250,200);// Un segment est ajouté vers 200,200
+ctx.moveTo(250,200);
+ctx.lineTo(120,100); 
+
+ctx.moveTo(280,100);
+ctx.lineTo(120,100); 
+
+ctx.moveTo(280,100);
+ctx.lineTo(150,200); // c bon
+ctx.lineWidth='3';
+ctx.strokeStyle ="green";
+ctx.stroke();
+	
 
 
 
