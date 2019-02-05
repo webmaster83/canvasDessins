@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Premier dessin Drapeau</title>
+</head>
+
+<body>
+<canvas id="monCanvas" width="500px" height="500px" style="border: 1px solid black;"> Your browser does not support the HTML5 canvas tag. </canvas>
+<script>
+var c = document.getElementById("monCanvas");
+var ctx = c.getContext("2d");
+
+		
+	/*triangle*/
+ctx.beginPath();
+ctx.strokeStyle ="red";;
+ctx.moveTo(50, 50);
+ctx.lineTo(50, 150);
+ctx.lineTo(100, 100);
+	ctx.fill();
+ctx.closePath();
+
+	
+	
+	    /*ligne droite vertical*/
+ctx.beginPath();
+ctx.strokeStyle ="black";
+ctx.moveTo(51, 140);
+ctx.lineTo(51, 200);
+ctx.stroke();
+ctx.closePath();
+
+
+
+
+
+</script>
+</body>
+</html>
