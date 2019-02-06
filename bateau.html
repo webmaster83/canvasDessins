@@ -10,9 +10,54 @@
 	<script>
 	var c = document.getElementById("monCanvas");
 var ctx = c.getContext("2d");
-//ctx.beginPath();
+
+		// Vague	
 		
+	var xoff = -60;
+	var yoff = 100 ; 
+	ctx.fillStyle = "blue";	
+ctx.beginPath();
+   ctx.moveTo(35 + xoff, 218 + yoff);
+  ctx.bezierCurveTo(14 + xoff, 259 + yoff, 170 + xoff, 183 + yoff, 156 + xoff, 177 + yoff);
+  ctx.bezierCurveTo(142 + xoff, 171 + yoff, 289 + xoff, 258 + yoff, 332 + xoff, 219 + yoff);
+  ctx.bezierCurveTo(343 + xoff, 209 + yoff, 463 + xoff, 279 + yoff, 464 + xoff, 196 + yoff);
+  ctx.bezierCurveTo(464 + xoff, 181 + yoff, 616 + xoff, 234 + yoff, 603 + xoff, 241 + yoff);
+  ctx.bezierCurveTo(590 + xoff, 248 + yoff, 615 + xoff, 472 + yoff, 601 + xoff, 477 + yoff);
+  ctx.bezierCurveTo(587 + xoff, 482 + yoff, 4 + xoff, 458 + yoff, 3 + xoff, 473 + yoff);
+  ctx.bezierCurveTo(2 + xoff, 488 + yoff, 13 + xoff, 308 + yoff, 12 + xoff, 323 + yoff);
+  ctx.bezierCurveTo(11 + xoff, 338 + yoff, 10 + xoff, 255 + yoff, 9 + xoff, 270 + yoff);
+  ctx.fill();
+
+// Voile 
+ctx.beginPath();      // Début chemin
+ctx.moveTo(140,80);   
+ctx.lineTo(300,230);  
+ctx.lineTo(140,230);  
+ctx.closePath();      
+ctx.fillStyle = "lightblue"; 
+ctx.fill();           // Remplissage tracé
+
+// Coque 
+ctx.beginPath();      // Début d'un autre chemin
+ctx.moveTo(50,250);
+ctx.lineTo(100,300);
+ctx.lineTo(250,300);
+ctx.lineTo(300,250);
+ctx.fillStyle = "peru";
+ctx.strokeStyle = "sienna"; // Définition de la couleur de contour
+ctx.lineWidth = 5;         // Définition de la largeur de ligne
+ctx.fill();            // Application du remplissage
+ctx.stroke();          // Application du contour
+
+// Mât
+ctx.beginPath();
+ctx.moveTo(140,50);
+ctx.lineTo(140,250);
+ctx.lineWidth = 10;
+ctx.stroke();
 		
+
+
 	
 	</script>
 	
